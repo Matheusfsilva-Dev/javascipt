@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            width: 150px;
+            height: 80px;
+            background-color: #00aaff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0088cc;
+        }
+    </style>
+</head>
+<body>
+    <h1>Boas vindas</h1>
+    <button onclick="inicio()">Inicie o desafio</button>
+
+    <script>
+        function inicio(){
+            let nome = prompt ('Qual é seu nome? ')
+            let idade = prompt (`Olá, ${nome}. Quantos anos voce tem? `)
+            alert(`Acabei de conhecer o ${nome}, que tem ${idade} anos de idade!`)
+        }
+    </script>
+</body>
+</html>
