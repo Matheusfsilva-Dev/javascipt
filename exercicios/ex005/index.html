@@ -10,10 +10,8 @@
         }
 
         button {
-            height: 82px;
-            width: 205px;
-            margin-bottom: 16px;
-            font: normal 12pt Arial;
+            font-size: 12pt;
+            padding: 30px;
         }
     </style>
 </head>
@@ -21,7 +19,7 @@
     <h1>Trabalhando com números</h1>
     <button onclick="clicou()">Clique para calcular</button>
     <div id="res">
-        O resultado vem aqui...
+        <p>O resultado vem aqui...</p>
     </div>
 
     <script>
@@ -31,7 +29,7 @@
             num = Number(num)
             var mult = num * 2
             var divi = num / 2
-            res.innerText = `O dobro de ${num} é ${mult} e a metade é ${divi}!`
+            res.innerHTML = `<p>O dobro de ${num} é ${mult} e a metade é ${divi}</p>!`
         }
     </script>
 </body>

@@ -10,10 +10,8 @@
         }
 
         button {
-            height: 82px;
-            width: 211px;
-            margin-bottom: 16px;
-            font: normal 12pt Arial;
+            font-size: 12pt;
+            padding: 30px;
         }
     </style>
 </head>
@@ -21,14 +19,14 @@
     <h1>Trabalhando com Dados v2.0</h1>
     <button onclick="clicou()">Clique para começar</button>
     <div id="res">
-        Aqui vai aparecer o resultado...
+        <p>Aqui vai aparecer o resultado...</p>
     </div>
-    
+
     <script>
         function clicou() {
             var nome = prompt('Qual o seu nome? ')
             var res = document.querySelector('div#res')
-            res.innerHTML = `Olá, <strong>${nome}</strong>! É um grande prazer te conhecer! &#128406;`
+            res.innerHTML = `<p>Olá, <strong>${nome}</strong>! É um grande prazer te conhecer! &#128406</p>;`
             
         }
     </script>

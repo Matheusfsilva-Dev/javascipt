@@ -10,10 +10,8 @@
         }
 
         button {
-            height: 82px;
-            width: 163px;
-            margin-bottom: 16px;
-            font: normal 12pt Arial;
+            font-size: 12pt;
+            padding: 30px;
         }
     </style>
 </head>
@@ -21,7 +19,7 @@
     <h1>Somando dois números</h1>
     <button onclick="clicou()">Iniciar a soma</button>
     <div id="res">
-        O resultado vem aqui...
+        <p>O resultado vem aqui...</p>
     </div>
 
     <script>
@@ -31,7 +29,7 @@
             var n2 = prompt('digite outro número: ')
             n2 = Number(n2)
             var soma = n1 + n2
-            res.innerHTML = `A soma entre <mark>${n1}</mark> e <mark>${n2}</mark> é igual a <strong>${soma}</strong>!`
+            res.innerHTML = `<p>A soma entre <mark>${n1}</mark> e <mark>${n2}</mark> é igual a <strong>${soma}</strong>!</p>`
         }
     </script>
 </body>
