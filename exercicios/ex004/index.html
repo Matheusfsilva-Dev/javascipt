@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados em JS</title>
+    <style>
+        body {
+            font: normal 12pt Arial;
+        }
+
+        button {
+            height: 82px;
+            width: 211px;
+            margin-bottom: 16px;
+            font: normal 12pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Dados v2.0</h1>
+    <button onclick="clicou()">Clique para começar</button>
+    <div id="res">
+        Aqui vai aparecer o resultado...
+    </div>
+    
+    <script>
+        function clicou() {
+            var nome = prompt('Qual o seu nome? ')
+            var res = document.querySelector('div#res')
+            res.innerHTML = `Olá, <strong>${nome}</strong>! É um grande prazer te conhecer! &#128406;`
+            
+        }
+    </script>
+</body>
+</html>
