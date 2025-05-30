@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de cliques</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+        
+        body {
+            font: normal 12pt Arial;
+        }
+
+        h1 {
+            font-weight: normal;
+            font-family: 'Pacifico';
+        }
+
+        button {
+            font-size: 12pt;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contador de cliques</h1>
+    <button onclick="contar()">Clique em mim</button>
+    <button onclick="limpar()">Zerar o contador</button>
+    <div id="res">
+        <p>O contador está com <mark>0</mark> cliques.</p>
+    </div>
+
+    <script>
+        let cont = 0
+        let res = document.querySelector('div#res')
+        
+        function contar() {
+            cont ++
+           
+            res.innerHTML = `<p>O contador está com <mark>${cont}</mark> cliques.</p>`
+        }
+
+        function limpar() {
+            cont = 0
+            res.innerHTML = `<p>O contador está com <mark>${cont}</mark> cliques.</p>`
+        }
+    </script>
+</body>
+</html>

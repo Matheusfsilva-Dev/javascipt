@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript externo</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+        body {
+            font: normal 12pt Arial;
+        }
+
+        h1 {
+            font-family: 'Pacifico';
+            font-weight: normal;
+        }
+
+        button {
+            padding: 30px;
+            font-size: 12pt;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Externo</h1>
+    <button onclick="chamar(1)">Ação 1</button>
+    <button onclick="chamar(2)">Ação 2</button>
+    <button onclick="chamar(3)">Ação 3</button>
+    <button onclick="chamar(4)">Ação 4</button>
+
+    <div id="res">
+        <p>Aqui vou registrar suas ações com os botões acima.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
