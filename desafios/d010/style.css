@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+body {
+    font: normal 12pt Arial;
+}
+
+button {
+    font: normal 12pt Arial;
+    padding: 20px;
+}
